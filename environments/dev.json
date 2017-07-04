@@ -1,0 +1,12 @@
+{
+	"name": "dev",
+	"description": "dev",
+	"override_attributes": {
+		"filebeat_cookbook": {
+			"source": "/root/.chef/local-mode-cache/cache/*.out",
+			"sink": "http://dev-elasticsearch.oski.tavisca.com:9200",
+			"index": "filebeat-logs"
+		}
+
+	}
+}
